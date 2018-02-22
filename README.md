@@ -20,23 +20,23 @@ A professional organizing service dedicated to teaching individuals how to declu
    rake db:migrate
    ```
 
-4. Configure Sendgrid Email ([Documentation](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html))
+4. Configure Sendgrid Email **([Documentation](https://devcenter.heroku.com/articles/sendgrid#obtaining-an-api-key))**
 
-   config/application.yml
+   ##### config/application.yml
    ```
    SENDGRID_USERNAME: example@heroku.com
    SENDGRID_PASSWORD: 12345678abcdefgh
    ```
 
-5. Configure Stripe Payment ([Documentation](https://stripe.com/docs/checkout/rails))
+5. Configure Stripe Payment **([Documentation](https://stripe.com/docs/checkout/rails))**
 
-   config/application.yml
+   ##### config/application.yml
    ```
    STRIPE_TEST_PUBLISHABLE_KEY: pk_test_abcdef123456
    STRIPE_TEST_SECRET_KEY: sk_test_abcdef123456
    ```
 
-6. Run It Locally
+4. Run It Locally
    ```
    rails s
    ```

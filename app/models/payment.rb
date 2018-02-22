@@ -16,9 +16,10 @@ class Payment < ApplicationRecord
   private
 
   def update_paid
-    user_id = self.user_id
-    user = User.find(user_id)
+    id = self.user_id
+    user = User.find(id)
     user.paid = true
+    user.save
   end
 
 end
