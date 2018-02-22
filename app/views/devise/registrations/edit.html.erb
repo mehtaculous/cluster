@@ -91,7 +91,7 @@
   <% end %>
   <div class="row">
     <div class="col-md-12 text-center">
-      <% if (current_user.service == 'Starter') || (current_user.service == 'Standard') || (current_user.service == 'Premium') %>
+      <% if (current_user.paid == false) && ((current_user.service == 'Starter') || (current_user.service == 'Standard') || (current_user.service == 'Premium')) %>
         <div class="form-group">
           <%= form_tag charges_path do %>
             <script class="stripe-button" src="https://checkout.stripe.com/checkout.js" 

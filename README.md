@@ -2,34 +2,33 @@
 
 A professional organizing service dedicated to teaching individuals how to declutter and maintain their personal space
 
+
 ## Getting Started
 
-1. Cloning Repo
+1. Clone Repo
    ```
    git clone git@github.com:mehtaculous/clutter.git
    ```
 
-2. Installing Gems
+2. Install Gems
    ```
    bundle install --without production
    ```
 
-3. Running Migrations
+3. Run Migrations
    ```
    rake db:migrate
    ```
 
-4. Configuring Sendgrid Email
-   #### [Setup Documentation](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html)
-   
+4. Configure Sendgrid Email ([Documentation](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html))
+
    config/application.yml
    ```
    SENDGRID_USERNAME: example@heroku.com
-   SENDGRID_PASSWORD: 123456789
+   SENDGRID_PASSWORD: 12345678abcdefgh
    ```
 
-5. Configuring Stripe Payment
-   #### [Setup Documentation](https://stripe.com/docs/checkout/rails)
+5. Configure Stripe Payment ([Documentation](https://stripe.com/docs/checkout/rails))
 
    config/application.yml
    ```
@@ -37,7 +36,7 @@ A professional organizing service dedicated to teaching individuals how to declu
    STRIPE_TEST_SECRET_KEY: sk_test_abcdef123456
    ```
 
-6. Running It Locally
+6. Run It Locally
    ```
    rails s
    ```
