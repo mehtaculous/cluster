@@ -1,34 +1,43 @@
 # [C L U T T E R](https://clutterrfree.herokuapp.com)
 
 A professional organizing service dedicated to teaching individuals how to declutter and maintain their personal space
-<hr>
 
-<h1>Getting Started</h1>
+## Getting Started
 
-<h3>Clone Repo</h3>
-```
-git clone git@github.com:mehtaculous/clutter.git
-```
+1. Cloning Repo
+   ```
+   git clone git@github.com:mehtaculous/clutter.git
+   ```
 
-<h3>Installation</h3>
-```
-bundle install --without production
-```
+2. Installing Gems
+   ```
+   bundle install --without production
+   ```
 
-<h3>Migration</h3>
-```
-rake db:migrate
-```
+3. Running Migrations
+   ```
+   rake db:migrate
+   ```
 
-<h3>Configuration</h3>
-config/application.yml
+4. Configuring Sendgrid Email
+   #### [Setup Documentation](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html)
+   
+   config/application.yml
+   ```
+   SENDGRID_USERNAME: example@heroku.com
+   SENDGRID_PASSWORD: 123456789
+   ```
 
-<h4>Setup Sendgrid Email Service</h4>
-```
+5. Configuring Stripe Payment
+   #### [Setup Documentation](https://stripe.com/docs/checkout/rails)
 
-```
+   config/application.yml
+   ```
+   STRIPE_TEST_PUBLISHABLE_KEY: pk_test_abcdef123456
+   STRIPE_TEST_SECRET_KEY: sk_test_abcdef123456
+   ```
 
-<h4>Setup Stripe Payment Service</h4>
-```
-
-```
+6. Running It Locally
+   ```
+   rails s
+   ```
