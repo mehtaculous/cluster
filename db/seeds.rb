@@ -10,8 +10,9 @@ sam = User.new(
   state: 'CA',
   zip: '94612',
   service: 'Standard',
-  appointment: '2018-02-08 16:20:00',
-  second_appointment: '2018-02-15 16:20:00'
+  appointment: '2018-04-01 16:20:00',
+  second_appointment: '2018-04-20 16:20:00',
+  unit_size: '1 Bedroom'
 )
 sam.skip_confirmation!
 sam.save!
@@ -27,7 +28,8 @@ sam.save!
     state: Faker::Address.state_abbr,
     zip: Faker::Address.zip_code,
     service: 'Starter',
-    appointment: Faker::Date.forward(30)
+    appointment: Faker::Date.forward(30),
+    unit_size: 'Studio'
   )
   user.skip_confirmation!
   user.save!
@@ -46,7 +48,8 @@ end
     service: 'Premium',
     appointment: Faker::Date.forward(10),
     second_appointment: Faker::Date.forward(20),
-    third_appointment: Faker::Date.forward(30)
+    third_appointment: Faker::Date.forward(30),
+    unit_size: '2 Bedrooms'
   )
   user.skip_confirmation!
   user.save!

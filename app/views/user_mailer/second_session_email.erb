@@ -1,4 +1,4 @@
-<p>Hello <%= @user.name.split(' ').first %>,</p>
+<p>Hi <%= @user.name.split(' ').first %>,</p>
 <p>
   We hope you are looking forward to your next session with Clutter. Your appointment is on <a href="https://clutterrfree.herokuapp.com/users/edit" style="text-decoration: none" target="_blank"><strong style="color: #008080"><%= @user.second_appointment.strftime("%A %B %e at %l:%M %P") %></strong></a>.
 </p>

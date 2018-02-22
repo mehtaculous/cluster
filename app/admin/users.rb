@@ -1,14 +1,16 @@
 ActiveAdmin.register User do
   permit_params :name, :email, :password, :phone_number, :street_address, :city, :state, :zip, 
-                :service, :appointment, :second_appointment, :third_appointment
+                :service, :appointment, :second_appointment, :third_appointment, :unit_size
 
   preserve_default_filters!
 
   remove_filter :encrypted_password, :reset_password_token, :reset_password_sent_at, :remember_created_at, 
                 :sign_in_count, :last_sign_in_at, :current_sign_in_at, :current_sign_in_ip, :last_sign_in_ip, 
-                :confirmation_token, :confirmed_at, :confirmation_sent_at, :unconfirmed_email
+                :confirmation_token, :confirmed_at, :confirmation_sent_at, :unconfirmed_email, :payments
 
   filter :service, as: :select, collection: {'Starter Package' => 'Starter', 'Standard Package' => 'Standard', 'Premium Package' => 'Premium'}
+  filter :unit_size, as: :select, collection: {'Studio' => 'Studio', '1 Bedroom' => '1 Bedroom', '2 Bedrooms' => '2 Bedrooms', 
+                                               '3 Bedrooms' => '3 Bedrooms', '4 Bedrooms' => '4 Bedrooms', '5 Bedrooms' => '5 Bedrooms'}
 
   index do
     selectable_column
@@ -26,6 +28,7 @@ ActiveAdmin.register User do
     column :city
     column :state
     column "Zip Code", :zip
+    column :unit_size
     column :service
     column "First Appointment", :appointment do |date|
       date.appointment.strftime('%a %b %e %Y %l:%M %P') if date.appointment
@@ -49,6 +52,8 @@ ActiveAdmin.register User do
       f.input :city
       f.input :state
       f.input :zip
+      f.input :unit_size, as: :select, collection: {'Studio' => 'Studio', '1 Bedroom' => '1 Bedroom', '2 Bedrooms' => '2 Bedrooms', 
+                                                    '3 Bedrooms' => '3 Bedrooms', '4 Bedrooms' => '4 Bedrooms', '5 Bedrooms' => '5 Bedrooms'}
       f.input :service, as: :select, collection: {'Starter Package' => 'Starter', 'Standard Package' => 'Standard', 'Premium Package' => 'Premium'}
       f.input :appointment
       f.input :second_appointment
