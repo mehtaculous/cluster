@@ -20,7 +20,7 @@ A professional organizing service dedicated to teaching individuals how to declu
    rake db:migrate
    ```
 
-4. Configure Sendgrid Email **([Documentation](https://devcenter.heroku.com/articles/sendgrid#obtaining-an-api-key))**
+4. Configure Sendgrid Email **([Documentation](https://devcenter.heroku.com/articles/sendgrid))**
 
    ##### config/application.yml
    ```
@@ -32,8 +32,8 @@ A professional organizing service dedicated to teaching individuals how to declu
 
    ##### config/application.yml
    ```
-   STRIPE_TEST_PUBLISHABLE_KEY: pk_test_abcdef123456
-   STRIPE_TEST_SECRET_KEY: sk_test_abcdef123456
+   STRIPE_PUBLISHABLE_KEY: pk_test_abcdef123456
+   STRIPE_SECRET_KEY: sk_test_abcdef123456
    ```
 
 4. Run It Locally
