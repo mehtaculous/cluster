@@ -169,6 +169,10 @@ header .header-content .header-content-inner p {
   background-color: transparent;
 }
 
+#myCarousel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 a.left.carousel-control, 
 a.right.carousel-control {
   background-image: none;
@@ -267,6 +271,7 @@ p.social-media {
   width: 350px;
   margin: 0 auto;
   border: 5px solid #008080;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .carousel-inner p {
@@ -325,6 +330,7 @@ span.arrows.glyphicon.glyphicon-chevron-right {
 
 div.thumbnail {
   padding: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .caption h3 {
