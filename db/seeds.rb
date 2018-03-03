@@ -11,7 +11,7 @@ sam = User.new(
   zip: '94612',
   unit_size: '1 Bedroom',
   service: 'Standard',
-  paid: true,
+  paid: false,
   appointment: '2018-04-01 16:20:00',
   second_appointment: '2018-04-20 16:20:00'
 )

@@ -10,7 +10,39 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver
   end
 
-  private 
+  def disable_service
+    if self.appointment
+      if self.appointment < Time.zone.now
+        return ['Starter', 'Standard', 'Premium']
+      end
+    end
+  end
+
+  def disable_appointment
+    if self.appointment
+      if self.appointment < Time.zone.now
+        return true
+      end
+    end
+  end
+
+  def disable_second_appointment
+    if self.second_appointment
+      if self.second_appointment < Time.zone.now
+        return true
+      end
+    end
+  end
+
+  def disable_third_appointment
+    if self.third_appointment
+      if self.third_appointment < Time.zone.now
+        return true
+      end
+    end
+  end
+
+  private
 
   def first_appointment_conflict
     users = User.all
