@@ -10,7 +10,7 @@ task :first_session_reminder => :environment do
   users = User.all
   users.each do |user|
     if user.appointment
-      if (Time.zone.now >= (user.appointment - 40.hours)) && ((Time.zone.now - 8.hours) < user.appointment)
+      if (Time.zone.now >= (user.appointment - 48.hours)) && (Time.zone.now < user.appointment)
         UserMailer.first_session_email(user).deliver
       end
     end
@@ -22,7 +22,7 @@ task :second_session_reminder => :environment do
   users = User.all
   users.each do |user|
     if user.second_appointment 
-      if (Time.zone.now >= (user.second_appointment - 40.hours)) && ((Time.zone.now - 8.hours) < user.second_appointment)
+      if (Time.zone.now >= (user.second_appointment - 48.hours)) && (Time.zone.now < user.second_appointment)
         UserMailer.second_session_email(user).deliver
       end
     end
@@ -34,7 +34,7 @@ task :third_session_reminder => :environment do
   users = User.all
   users.each do |user| 
     if user.third_appointment
-      if (Time.zone.now >= (user.third_appointment - 40.hours)) && ((Time.zone.now - 8.hours) < user.third_appointment)
+      if (Time.zone.now >= (user.third_appointment - 48.hours)) && (Time.zone.now < user.third_appointment)
         UserMailer.third_session_email(user).deliver
       end
     end

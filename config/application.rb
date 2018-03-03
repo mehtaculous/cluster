@@ -28,5 +28,8 @@ module Clutter
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.assets.paths << Rails.root.join('node_modules')
+
+    config.time_zone = "Pacific Time (US & Canada)"
+    config.active_record.default_timezone = :utc
   end
 end
