@@ -66,7 +66,7 @@ $(document).on('turbolinks:load', function() {
   });
 
 
-  // Clutter header animation
+  // Cluster header animation
   $('.header-content-inner h1').addClass('animated pulse');
 
 

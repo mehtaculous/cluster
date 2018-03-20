@@ -5,7 +5,7 @@ class ReferralsController < ApplicationController
 
   def refer_user 
     UserMailer.referral_email(current_user, referral_params).deliver
-    flash[:notice] = "You have successfully referred #{referral_params[:name]} to join Clutter!"
+    flash[:notice] = "You have successfully referred #{referral_params[:name]} to join Cluster!"
     redirect_to root_path
   end
 

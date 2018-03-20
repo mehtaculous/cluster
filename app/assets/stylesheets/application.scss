@@ -49,7 +49,7 @@ body {
 
 .bg-primary {
   color: #fff;
-  background-color: #008080;
+  background-color: #2F7BAB;
 }
 
 .bg-dark {
@@ -75,7 +75,7 @@ p {
 hr {
   max-width: 50px;
   border-width: 5px;
-  border-color: #008080;
+  border-color: #2F7BAB;
 }
 
 hr.light {
@@ -116,7 +116,7 @@ div.modal-content {
 }
 
 div.modal-header {
-  background-color: #008080;
+  background-color: #2F7BAB;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -148,14 +148,14 @@ a.btn.btn-primary.sign-up:hover {
 .btn-primary:visited {
   border-radius: 0;
   border: 2px solid white !important;
-  background-color: #008080 !important;
+  background-color: #2F7BAB !important;
 }
 
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
   border: 2px solid white !important;
-  background-color: #006666 !important;
+  background-color: #245e83 !important;
 }
 
 @media (min-width: 992px) {
@@ -178,7 +178,7 @@ a.btn.btn-primary.sign-up:hover {
 .shared-links:hover,
 .shared-links:active,
 .shared-links:focus {
-  color: #008080 !important;
+  color: #2F7BAB !important;
   text-decoration : none !important;
 }
 
@@ -206,7 +206,7 @@ h2.section-heading {
 h2.content-heading {
   margin-top: 0;
   font-size: 40px;
-  color: #008080;
+  color: #2F7BAB;
 }
 
 
@@ -230,7 +230,7 @@ h2.content-heading {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-  color: #008080;
+  color: #2F7BAB;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 3px;
@@ -238,7 +238,7 @@ h2.content-heading {
 }
 
 .navbar-default .navbar-header .navbar-brand:hover {
-  color: #006666;
+  color: #245e83;
 }
 
 .navbar-default .nav > li > a {
@@ -249,7 +249,7 @@ h2.content-heading {
 }
 
 .navbar-default .nav > li > a:hover {
-  color: #008080;
+  color: #2F7BAB;
 }
 
 .navbar-default .navbar-toggle:hover, 
@@ -289,7 +289,7 @@ h2.content-heading {
     padding-bottom: 7px;
   }
   .navbar-default.scroll .navbar-header .navbar-brand {
-    color: #008080;
+    color: #2F7BAB;
   }
   .navbar-default.scroll .nav > li > a,
   .navbar-default.scroll .nav > li > a:visited,
@@ -297,7 +297,7 @@ h2.content-heading {
     color: #222;
   }
   .navbar-default.scroll .nav > li > a:hover {
-    color: #008080;
+    color: #2F7BAB;
   }
 }
 
@@ -308,14 +308,14 @@ h2.content-heading {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default .navbar-header .navbar-brand {
-    color: #008080;
+    color: #2F7BAB;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 3px;
     text-transform: uppercase;
   }
   .navbar-default .navbar-header .navbar-brand:hover {
-    color: #006666;
+    color: #245e83;
   }
   .navbar-default .nav > li > a {
     color: #222;
@@ -324,7 +324,7 @@ h2.content-heading {
     text-transform: uppercase;
   }
   .navbar-default .nav > li > a:hover {
-    color: #008080;
+    color: #2F7BAB;
   }
   .navbar-header {
     float: none;

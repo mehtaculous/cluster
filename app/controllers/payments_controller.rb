@@ -26,7 +26,7 @@ class PaymentsController < ApplicationController
 
     amount = Payment.price(current_user) / 100
 
-    flash[:notice] = "Your payment of $#{amount} for the Clutter #{current_user.service} Package has been successfully completed. Thank you!"
+    flash[:notice] = "Your payment of $#{amount} for the Cluster #{current_user.service} Package has been successfully completed. Thank you!"
     redirect_to edit_user_registration_path(current_user)
 
   rescue Stripe::CardError => e
