@@ -1,4 +1,4 @@
-# [C L U T T E R](https://clutterrfree.herokuapp.com)
+# [C L U S T E R](https://clusterfree.herokuapp.com)
 
 A professional organizing service dedicated to teaching individuals how to declutter and maintain their personal space
 
