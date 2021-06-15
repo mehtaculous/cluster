@@ -35,8 +35,3 @@ A professional organizing service dedicated to teaching individuals how to declu
    STRIPE_PUBLISHABLE_KEY: pk_test_abcdef123456
    STRIPE_SECRET_KEY: sk_test_abcdef123456
    ```
-
-4. Run It Locally
-   ```
-   rails s
-   ```
